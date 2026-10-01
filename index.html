@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="es"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260930-05-8966983","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/6542d56fbfe7a3eb.telemetry_sdk.js" integrity="sha512-ECdM0nK7EkwDuOqho2qxgyRQXyBHk9hZqRKMBr+Xsu6zjeHlt+qkO2N2YRiHN7Kg4e1fEHDhjIp4bGJYVypv1g=="></script>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Soluciones Digitales Caimán</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <style>
     :root { --navy:#103e4c; --action:#177ec3; --teal:#16a7a0; --mint:#e8f7f5; --ink:#17313a; }
     * { box-sizing:border-box; }
     body { margin:0; font-family:"DM Sans",sans-serif; color:var(--ink); }
-    .app-shell { width:100%; min-height:calc(100 * min(var(--vh, 1vh), 1vh)); background:#f5f8f8; }
+    .app-shell { width:100%; min-height:100vh; min-height:100dvh; background:#f5f8f8; }
     .sidebar { background:var(--navy); }
     .nav-item { color:#c8dbe0; transition:.2s; }
     .nav-item:hover,.nav-item.active { background:rgba(255,255,255,.12); color:#fff; }
@@ -24,7 +24,7 @@
     .input { width:100%; border:1px solid #c8d7d8; border-radius:10px; padding:.7rem .8rem; background:#fff; }
     .input:focus, button:focus-visible { outline:3px solid rgba(22,167,160,.28); outline-offset:2px; border-color:var(--teal); }
     .input:disabled { background:#edf1f1; color:#819394; cursor:not-allowed; }
-    .mobile-nav { display:none; }
+    
     .toast { transform:translate(-50%,130%); transition:.3s; }
     .toast.show { transform:translate(-50%,0); }
     .fab { position:fixed; right:24px; bottom:24px; z-index:45; }
@@ -32,15 +32,30 @@
     .appointment-card.cancelled { border-left-color:#9ca3af; opacity:.6; }
     .service-card { transition:transform .2s, box-shadow .2s; }
     .service-card:hover { transform:translateY(-3px); box-shadow:0 14px 30px rgba(16,62,76,.10); }
-    .modal-panel { max-height:calc(90 * min(var(--vh, 1vh), 1vh)); overflow-y:auto; }
+    .modal-panel { max-height:90vh; max-height:90dvh; overflow-y:auto; }
     @keyframes rise { from {opacity:0;transform:translateY(8px)} to {opacity:1;transform:none} }
-    @media(max-width:767px) {
-      .sidebar { display:none; }
-      .mobile-nav { display:flex; }
-      .main-area { padding-bottom:92px; }
-      .fab { right:16px; bottom:90px; }
-    }
-  </style>
+    
+  
+body { overflow-x:hidden; }
+.main-area { min-width:0; }
+.mobile-nav { display:none; overflow-x:auto; padding:6px 4px calc(6px + env(safe-area-inset-bottom)); scrollbar-width:none; -webkit-overflow-scrolling:touch; }
+.mobile-nav::-webkit-scrollbar { display:none; }
+.nav-mobile { flex:1 0 68px; display:flex; flex-direction:column; align-items:center; gap:2px; padding:6px 4px; min-height:48px; font-size:11px; color:#5b7279; border-radius:10px; }
+.nav-mobile svg { width:22px; height:22px; }
+.nav-mobile.active { color:var(--action); background:var(--mint); font-weight:600; }
+.nav-mobile.hidden { display:none !important; }
+@media(max-width:767px) {
+  .sidebar { display:none; }
+  .mobile-nav { display:flex; }
+  .main-area { padding-bottom:calc(96px + env(safe-area-inset-bottom)); }
+  .fab { right:16px; bottom:calc(84px + env(safe-area-inset-bottom)); width:52px; height:52px; }
+  .toast { bottom:calc(92px + env(safe-area-inset-bottom)) !important; width:calc(100% - 32px); max-width:420px; text-align:center; }
+  .input { font-size:16px; }
+  button, select { min-height:44px; }
+  .card { border-radius:14px; }
+  .modal-panel { padding:1.25rem; }
+}
+</style>
   <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
   <script src="/_sdk/6c2ecc939521f244.data_sdk.js" type="text/javascript" integrity="sha512-gRx8s+XsZDN6mSIQu2sivLZysbV0WHhb5kXNUWlgVb5lCMU1foJYukyMEDPv8Tnoocb8iwqB4XdRrWc7oEGzIQ=="></script>
@@ -71,12 +86,12 @@
       <p class="text-sm text-slate-500" id="today-label"></p>
       <h1 class="text-2xl md:text-3xl font-bold">Hola, <span id="role-greeting">Administrador</span></h1>
      </div>
-     <div class="flex items-center gap-2 card px-3 py-2">
+     <select id="role-select-mobile" class="md:hidden input !w-auto text-sm" aria-label="Rol de demostración"><option value="admin">Administrador</option><option value="cliente">Cliente</option></select><div class="flex items-center gap-2 card px-3 py-2">
       <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span><span class="text-sm font-medium">Negocio disponible</span>
      </div>
     </header>
     <section id="inicio" class="view active">
-     <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-6">
+     <div class="grid grid-cols-2 xl:grid-cols-4 gap-3 md:gap-4 mb-6">
       <div class="card p-5">
        <p class="text-sm text-slate-500">Citas de hoy</p>
        <p class="text-3xl font-bold mt-2" id="stat-today">—</p>
@@ -254,12 +269,8 @@
       </div><button class="btn-primary rounded-xl px-5 py-3 font-semibold mt-6" type="submit">Guardar preferencias</button>
      </form>
     </section>
-   </main>
-   <nav class="mobile-nav fixed bottom-0 inset-x-0 z-30 bg-white border-t px-1 py-2 justify-around" aria-label="Navegación móvil"><button class="nav-mobile p-2 text-xs text-center" data-view="inicio"><i data-lucide="house" class="mx-auto w-5"></i>Inicio</button> <button class="nav-mobile p-2 text-xs text-center" data-view="catalogo"><i data-lucide="store" class="mx-auto w-5"></i>Catálogo</button> <button class="nav-mobile p-2 text-xs text-center" data-view="reservar"><i data-lucide="plus-circle" class="mx-auto w-5"></i>Reservar</button> <button class="nav-mobile p-2 text-xs text-center admin-only" data-view="agenda"><i data-lucide="calendar-days" class="mx-auto w-5"></i>Agenda</button>
-    <div class="col-span-full basis-full text-center text-xs text-slate-500 pt-1">
-     Desarrollado por Soluciones Digitales Caimán - <a id="support-link-mobile" class="font-semibold text-teal-700 underline underline-offset-2" href="https://wa.link/t9dtfs" target="_blank" rel="noopener noreferrer">Contactar Soporte</a>
-    </div>
-   </nav><a id="whatsapp-fab" class="fab w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg hover:scale-105 transition" href="https://wa.link/t9dtfs" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"><i data-lucide="message-circle"></i></a>
+   <p class="md:hidden text-center text-xs text-slate-500 mt-8">Desarrollado por Soluciones Digitales Caimán · <a id="support-link-mobile" class="font-semibold text-teal-700 underline underline-offset-2" href="https://wa.link/t9dtfs" target="_blank" rel="noopener noreferrer">Contactar Soporte</a></p></main>
+   <nav class="mobile-nav fixed bottom-0 inset-x-0 z-30 bg-white border-t" aria-label="Navegación móvil"><button class="nav-mobile active" data-view="inicio"><i data-lucide="house"></i><span>Inicio</span></button><button class="nav-mobile" data-view="catalogo"><i data-lucide="store"></i><span>Catálogo</span></button><button class="nav-mobile" data-view="reservar"><i data-lucide="plus-circle"></i><span>Reservar</span></button><button class="nav-mobile admin-only" data-view="agenda"><i data-lucide="calendar-days"></i><span>Agenda</span></button><button class="nav-mobile admin-only" data-view="clientes"><i data-lucide="users"></i><span>Clientes</span></button><button class="nav-mobile admin-only" data-view="servicios"><i data-lucide="briefcase-business"></i><span>Servicios</span></button><button class="nav-mobile admin-only" data-view="horarios"><i data-lucide="clock-3"></i><span>Horarios</span></button><button class="nav-mobile admin-only" data-view="configuracion"><i data-lucide="settings-2"></i><span>Ajustes</span></button></nav><a id="whatsapp-fab" class="fab w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg hover:scale-105 transition" href="https://wa.link/t9dtfs" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"><i data-lucide="message-circle"></i></a>
    <div id="toast" class="toast fixed bottom-6 left-1/2 z-50 bg-[#17313a] text-white px-5 py-3 rounded-xl shadow-xl" role="status"></div>
    <div id="confirm-modal" class="hidden fixed inset-0 z-50 bg-slate-900/45 p-4 items-center justify-center" role="dialog" aria-modal="true" aria-labelledby="confirm-title">
     <div class="modal-panel bg-white w-full max-w-md rounded-2xl p-6 shadow-2xl">
@@ -304,13 +315,22 @@
    </div>
   </div>
   <script>
-    const today = new Date("2026-09-30T12:00:00");
-    const isoToday = today.toISOString().slice(0,10);
+    // ===== CONFIGURACIÓN DE LA CLÍNICA: es lo ÚNICO que cambia entre copias =====
+const CLINIC = {
+  name: "Soluciones Digitales Caimán",
+  tagline: "Gestión simple de turnos",
+  whatsappUrl: "https://wa.link/t9dtfs",
+  supportUrl: "https://wa.link/t9dtfs",
+  professionals: ["Ana García", "Carlos Ruiz"]
+};
+// ==============================================================================
+const today = new Date();
+const isoToday = today.toLocaleDateString("sv-SE");
     let appointments = [], editingAppointment = null;
     let whatsappNumber = "";
     let supportNumber = "";
-    const whatsappFallback = "https://wa.link/t9dtfs";
-    const supportFallback = "https://wa.link/t9dtfs";
+    const whatsappFallback = CLINIC.whatsappUrl;
+    const supportFallback = CLINIC.supportUrl;
     let clients = [
       {id:"c1",name:"Lucía Moreno",phone:"+34 600 123 456",email:"lucia@email.com"},
       {id:"c2",name:"Javier Soto",phone:"+34 611 456 789",email:"javier@email.com"}
@@ -368,6 +388,7 @@
     function showView(view){
       document.querySelectorAll(".view").forEach(el=>el.classList.toggle("active",el.id===view));
       document.querySelectorAll(".nav-item").forEach(el=>el.classList.toggle("active",el.dataset.view===view));
+document.querySelectorAll(".nav-mobile").forEach(el=>{el.classList.toggle("active",el.dataset.view===view); if(el.dataset.view===view) el.scrollIntoView({inline:"center",block:"nearest"});});
       if(view==="catalogo") renderCatalog();
       if(view==="agenda") renderAgenda();
       if(view==="clientes") renderClients();
@@ -584,15 +605,24 @@
 
     $("catalog-search").addEventListener("input",renderCatalog);
     $("catalog-category").addEventListener("change",renderCatalog);
-    $("role-select").addEventListener("change",event=>{
-      const client=event.target.value==="cliente";
-      document.querySelectorAll(".admin-only").forEach(el=>el.classList.toggle("hidden",client));
-      $("role-greeting").textContent=client?"Cliente":"Administrador";
-      if(client && ["agenda","clientes","servicios","horarios","configuracion"].includes(document.querySelector(".view.active").id)) showView("catalogo");
-    });
-
-    const handler={onDataChanged(data){ appointments=data; renderHome(); renderAgenda(); }};
+    function applyRole(value){
+const client=value==="cliente";
+document.querySelectorAll(".admin-only").forEach(el=>el.classList.toggle("hidden",client));
+$("role-greeting").textContent=client?"Cliente":"Administrador";
+$("role-select").value=value; $("role-select-mobile").value=value;
+const current=document.querySelector(".view.active");
+if(client && current && current.classList.contains("admin-only")) showView("catalogo");
+}
+["role-select","role-select-mobile"].forEach(id=>$(id).addEventListener("change",e=>applyRole(e.target.value)));
+const handler={onDataChanged(data){ appointments=data; renderHome(); renderAgenda(); }};
     async function init(){
+document.title=CLINIC.name;
+document.querySelector('[data-template-id="brand-name"]').textContent=CLINIC.name;
+document.querySelector('[data-template-id="brand-tagline"]').textContent=CLINIC.tagline;
+document.querySelector('[data-template-id="catalog-brand"]').textContent=CLINIC.name.toUpperCase();
+$("business-name").value=CLINIC.name;
+$("book-professional").innerHTML='<option>Sin preferencia</option>'+CLINIC.professionals.map(p=>`<option>${esc(p)}</option>`).join("");
+$("agenda-professional-filter").innerHTML='<option value="">Todos los profesionales</option>'+CLINIC.professionals.map(p=>`<option>${esc(p)}</option>`).join("");
       $("today-label").textContent=today.toLocaleDateString("es-ES",{weekday:"long",day:"numeric",month:"long"});
       $("book-date").min=isoToday; $("agenda-date").value=isoToday;
       populateServices(); renderSchedule(); resetBooking(); renderClients(); renderServices(); renderCatalog(); renderHome(); updateWhatsAppButton(); updateWhatsAppStatus(); lucide.createIcons();
